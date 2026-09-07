@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="dark-2026" width="96" />
+  <img src="assets/logo.svg" alt="code-2026" width="96" />
 </p>
 
-# dark-2026 — Ghostty
+# code-2026 — Ghostty
 
 Dark and light themes for [Ghostty](https://ghostty.org), ported from VS Code's
 **Dark Modern 2026**: red keywords, purple functions, teal types and light-blue strings.
@@ -26,7 +26,7 @@ terminal.
 Copy the theme into Ghostty's themes directory:
 
 ```sh
-cp themes/dark-2026.conf ~/.config/ghostty/themes/dark-2026
+cp themes/code-2026.conf ~/.config/ghostty/themes/code-2026
 # or for the light variant:
 cp themes/light-2026.conf ~/.config/ghostty/themes/light-2026
 ```
@@ -34,7 +34,7 @@ cp themes/light-2026.conf ~/.config/ghostty/themes/light-2026
 Then in `~/.config/ghostty/config`:
 
 ```conf
-theme = dark-2026
+theme = code-2026
 # or
 theme = light-2026
 ```
@@ -42,7 +42,7 @@ theme = light-2026
 Or keep this repo cloned and point at it directly:
 
 ```conf
-config-file = /path/to/dark-2026/themes/dark-2026.conf
+config-file = /path/to/code-2026/themes/code-2026.conf
 ```
 
 ## Palette
