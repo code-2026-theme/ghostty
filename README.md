@@ -4,20 +4,19 @@
 
 # dark-2026 — Ghostty
 
-A dark theme for [Ghostty](https://ghostty.org), ported from VS Code's **Dark Modern 2026**:
-red keywords, purple functions, teal types and light-blue strings on a near-black `#121314`
-canvas.
+Dark and light themes for [Ghostty](https://ghostty.org), ported from VS Code's
+**Dark Modern 2026**: red keywords, purple functions, teal types and light-blue strings.
 
-## The dark-2026 family
+## The code-2026 family
 
 | Target | Repository | |
 | --- | --- | --- |
-| Neovim | [dark-2026-theme/nvim](https://github.com/dark-2026-theme/nvim) | colorscheme plugin |
-| Ghostty | [dark-2026-theme/ghostty](https://github.com/dark-2026-theme/ghostty) | **this repo** |
-| kitty | [dark-2026-theme/kitty](https://github.com/dark-2026-theme/kitty) | terminal theme |
-| Xcode | [dark-2026-theme/xcode](https://github.com/dark-2026-theme/xcode) | editor theme |
-| Obsidian | [dark-2026-theme/obsidian](https://github.com/dark-2026-theme/obsidian) | app theme |
-| Yazi | [dark-2026-theme/yazi](https://github.com/dark-2026-theme/yazi) | file manager |
+| Neovim | [code-2026-theme/nvim](https://github.com/code-2026-theme/nvim) | colorscheme plugin |
+| Ghostty | [code-2026-theme/ghostty](https://github.com/code-2026-theme/ghostty) | **this repo** |
+| kitty | [code-2026-theme/kitty](https://github.com/code-2026-theme/kitty) | terminal theme |
+| Xcode | [code-2026-theme/xcode](https://github.com/code-2026-theme/xcode) | editor theme |
+| Obsidian | [code-2026-theme/obsidian](https://github.com/code-2026-theme/obsidian) | app theme |
+| Yazi | [code-2026-theme/yazi](https://github.com/code-2026-theme/yazi) | file manager |
 
 Every port shares one palette, so `:terminal` inside Neovim renders identically to the host
 terminal.
@@ -28,12 +27,16 @@ Copy the theme into Ghostty's themes directory:
 
 ```sh
 cp themes/dark-2026.conf ~/.config/ghostty/themes/dark-2026
+# or for the light variant:
+cp themes/light-2026.conf ~/.config/ghostty/themes/light-2026
 ```
 
 Then in `~/.config/ghostty/config`:
 
 ```conf
 theme = dark-2026
+# or
+theme = light-2026
 ```
 
 Or keep this repo cloned and point at it directly:
@@ -57,6 +60,22 @@ config-file = /path/to/dark-2026/themes/dark-2026.conf
 
 Background `#121314`, foreground `#bbbebf`, cursor `#bbbebf` on `#121314`, selection
 `#276782` with `#ffffff` text.
+
+### Light palette
+
+| | Normal | | Bright |
+| --- | --- | --- | --- |
+| black | `#f0f1f2` | bright black | `#999999` |
+| red | `#cf222e` | bright red | `#cf222e` |
+| green | `#116329` | bright green | `#116329` |
+| yellow | `#953800` | bright yellow | `#953800` |
+| blue | `#0550ae` | bright blue | `#0550ae` |
+| magenta | `#8250df` | bright magenta | `#8250df` |
+| cyan | `#116329` | bright cyan | `#116329` |
+| white | `#202020` | bright white | `#ffffff` |
+
+Background `#FFFFFF`, foreground `#202020`, cursor `#0069CC` on `#FFFFFF`, selection
+`#C2DAF5` with `#202020` text.
 
 ## Credits
 
